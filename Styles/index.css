@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background-color: #333647;
+  --pink-color: #f87652;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--background-color) !important;
+}
+.nav-section .navbar-brand {
+  font-size: 22px;
+  margin: 0px 8px;
+}
+.brand-tag {
+  color: var(--pink-color);
+}
+.nav-section .navbar-nav li {
+  margin: 0px 8px;
+}
+.nav-section .navbar-nav li a {
+  color: white !important;
+}
+.nav-section .navbar-nav .nav-link::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  bottom: 11px;
+  transition: 0.5s;
+}
+.nav-section .navbar-nav .nav-link:hover::before {
+  content: "";
+  width: 19px;
+  height: 2px;
+  background-color: var(--pink-color);
+  transition: 0.3s;
+}
+.navbar-light .navbar-toggler {
+  border-color: transparent !important;
+}
+.hero-section .row {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+}
+.hero-section .row img {
+  height: 50vh;
+  border-radius: 50%;
+}
+.hero-section .row h1,
+h2,
+h3,
+p {
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.img-effects {
+  animation: 0.8s ease updown alternate-reverse infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(20px);
+    box-shadow: 0px 25px 80px -15px #111;
+  }
+}
+@media (max-width: 768px) {
+  .img-effects {
+    margin: 60px 0px;
+  }
+}
+.hero-section .row .greet::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 2px;
+  top: 10px;
+  left: 70px;
+  text-align: center;
+  background-color: white;
+}
+.hero-section .row .title-head {
+  font-size: 40px;
+  font-weight: 600;
+}
+.hero-section .row button {
+  border-radius: 18px;
+  padding: 5px 15px;
+}
