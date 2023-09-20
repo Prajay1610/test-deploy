@@ -76,6 +76,7 @@ p {
 @media (max-width: 768px) {
   .img-effects {
     margin: 60px 0px;
+    scale: 0.6;
   }
 }
 .hero-section .row .greet::after {
